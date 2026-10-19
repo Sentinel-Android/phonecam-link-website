@@ -1,0 +1,47 @@
+[
+  {
+    "id": "wifi",
+    "title": "Wi-Fi",
+    "eyebrow": "WI-FI",
+    "headline": "Wi-Fi",
+    "description": "Connect your phone and PC to the same Wi-Fi network. PhoneCam Link discovers the camera so you can place it where the shot works best.",
+    "status": "implemented",
+    "visual": "wireless",
+    "steps": [
+      "Join the same Wi-Fi",
+      "Start camera on Android",
+      "Connect on Windows"
+    ],
+    "note": "Automatic LAN discovery is included. A manual phone address is available if your network blocks discovery."
+  },
+  {
+    "id": "usb-adb",
+    "title": "USB · ADB",
+    "eyebrow": "WIRED CONNECTION",
+    "headline": "USB ADB",
+    "description": "Connect a USB data cable and bring the camera feed to your PC. ADB port forwarding is handled by the Windows app.",
+    "status": "implemented",
+    "visual": "cable",
+    "steps": [
+      "Connect the USB cable",
+      "Approve USB debugging",
+      "Start camera, then Connect"
+    ],
+    "note": "This mode requires Android Developer options, USB debugging and your approval of the PC. Connecting a cable alone does not start the current app."
+  },
+  {
+    "id": "wifi-direct",
+    "title": "Wi-Fi Direct",
+    "eyebrow": "DIRECT WIRELESS",
+    "headline": "Wi-Fi Direct",
+    "description": "Create a direct Wi-Fi group on your PC and scan its QR code with your phone. A phone-hosted group is also available for compatible adapters.",
+    "status": "implemented",
+    "visual": "direct",
+    "steps": [
+      "Create a group on the PC",
+      "Scan the PC’s Wi-Fi QR",
+      "Start and connect the camera"
+    ],
+    "note": "Requires compatible Wi-Fi hardware. Internet availability depends on your network setup; see release notes for adapter requirements."
+  }
+]

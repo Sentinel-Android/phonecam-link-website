@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f0f1f5">
+  <title>Downloads — PhoneCam Link</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Downloads — PhoneCam Link">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  {{SEO_TAGS}}
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="4"/><path d="m8 6 2-3h4l2 3"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-windows" viewBox="0 0 24 24"><path d="M3 4h8v8H3zm10 0h8v8h-8zM3 14h8v7H3zm10 0h8v7h-8z"/></symbol>
+    <symbol id="i-android" viewBox="0 0 24 24"><path d="m7 5-2-3m12 3 2-3M3 13a9 9 0 0 1 18 0v7H3z"/><path d="M7 10h.01M17 10h.01" stroke-width="3"/></symbol>
+    <symbol id="i-frame" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18m6-18v18M3 9h18M3 15h18"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8a16 16 0 0 1 20 0M5 12a11 11 0 0 1 14 0M8 16a6 6 0 0 1 8 0"/><circle cx="12" cy="20" r="1"/></symbol>
+    <symbol id="i-cable" viewBox="0 0 24 24"><path d="M8 2v4m4-4v4M6 6h8v3a4 4 0 0 1-8 0zm4 7v4a4 4 0 0 0 8 0v-3m-2 0h4v-4h-4z"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><path d="M3 3h6v6H3zm12 0h6v6h-6zM3 15h6v6H3zm12 0h2v2h-2zm4 4h2v2h-2zM12 3v2m0 6v2m-9-1h4m4 5v4m4-2v2m4-10h2v4"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="PhoneCam Link home"><span class="brand-mark"><svg><use href="#i-camera"/></svg></span>PhoneCam <span class="brand-light">Link</span></a>
+    <div class="nav-actions"><a class="setup-nav-link" href="./get-started.html">Get Started</a><button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause motion"><svg class="motion-icon" viewBox="0 0 20 20" aria-hidden="true"><g class="icon-pause"><rect x="5" y="4" width="3" height="12" rx="1"/><rect x="12" y="4" width="3" height="12" rx="1"/></g><path class="icon-play" d="M6 3.5 16 10 6 16.5Z"/></svg></button><a href="./downloads.html" class="button button-small">Get the apps <svg><use href="#i-diagonal"/></svg></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span><span></span></button></div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="./index.html">Home</a><a href="./downloads.html">Downloads</a><a href="./get-started.html">Get Started</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="download" id="download" aria-labelledby="download-title"><div class="download-glow" aria-hidden="true"></div><div class="section-shell download-inner"><p class="eyebrow reveal"><span class="status-dot"></span> YOUR NEXT PERSPECTIVE STARTS HERE</p><h1 id="download-title" class="reveal">Ready for<br><span class="serif">a bigger view?</span></h1><p class="download-description reveal">Get PhoneCam Link on both your devices.</p><div class="download-cards"><article class="download-card reveal"><svg class="platform-icon"><use href="#i-android"/></svg><span class="platform-label">THE CAMERA</span><h3>For Android.</h3><p>Your phone. Your perspective.</p><a class="button button-accent" {{ANDROID_ATTRS}}>Android download <svg><use href="#i-diagonal"/></svg></a><span class="download-meta">APK · via GitHub Releases</span></article><article class="download-card reveal"><svg class="platform-icon"><use href="#i-windows"/></svg><span class="platform-label">THE BIGGER SCREEN</span><h3>For Windows 11.</h3><p>Your phone, as a Windows camera.</p><a class="button button-light" {{WINDOWS_ATTRS}}>Windows download <svg><use href="#i-diagonal"/></svg></a><span class="download-meta">Installer · via GitHub Releases</span></article></div><div class="release-row"><span>{{RELEASE_MESSAGE}}</span><div class="github-links"><a class="text-link" {{REPOSITORY_ATTRS}}>Open GitHub page <svg><use href="#i-diagonal"/></svg></a><a class="text-link" {{RELEASES_ATTRS}}>GitHub releases <svg><use href="#i-diagonal"/></svg></a></div></div></div></section>
+<section class="download-details section-shell"><h2>Two apps.<br><span class="serif">One setup.</span></h2><div class="requirements-grid"><article><h3>Android</h3><p>Android 7.0 or newer. Camera access and a compatible H.264 encoder. Lens and capture-mode availability vary by phone.</p></article><article><h3>Windows</h3><p>Windows 11 x64, build 22000 or newer. This build’s virtual-camera API is not available on Windows 10.</p></article></div><a href="./get-started.html" class="button">Installation &amp; first connection <svg><use href="#i-arrow"/></svg></a><p class="setup-note">Use the installation notes for your selected release. Preview builds may be unsigned or development-signed.</p></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="./index.html"><span class="brand-mark"><svg><use href="#i-camera"/></svg></span>PhoneCam <span class="brand-light">Link</span></a><p>A new perspective. Already in your pocket.</p><a {{REPOSITORY_ATTRS}} class="text-link">Open GitHub page <svg><use href="#i-diagonal"/></svg></a><span class="copyright">© {{YEAR}} PhoneCam Link</span></footer>
+  <button class="scroll-top" id="scroll-top" type="button" aria-label="Scroll to top" title="Back to top" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 11 6-6 6 6M12 5v14"/></svg></button>
+</body>
+</html>

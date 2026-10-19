@@ -1,0 +1,19 @@
+# Validation — 2026-10-19
+
+Configuration/page-render tests and an event-driven DOM harness pass. The harness exercises actual handlers for independent orientation/flip, five lens states, animation pause/resume/completion/reset, and reduced-motion behavior. It is not a browser rendering test. The three-page build and fully self-contained offline previews are generated from the same source.
+
+Generated imagery was inspected for unbranded devices, consistent PhoneCam Link screens, face placement and the streaming USB cable route. Native connection/USB geometry is inspected independently. Static checks cover unique IDs, one h1 per page, internal page/fragment/asset links, absence of retired accessory and auto-open claims, and public application version removal. Development and build HTTP routes are checked under a project subpath.
+
+A live browser review was blocked by automatic approval review in the earlier run. No alternative browser route was used. Therefore actual browser layout, touchscreen interaction, frame playback and final responsive behavior still require checking on a laptop and phone. The supplied tests cannot certify those visual properties.
+
+No website deployment or application build was performed. GitHub repository, package links and canonical website URL remain unconfigured; preview links for absent external targets are disabled rather than invented. Internal Downloads/Get Started navigation works within the one-file preview. UI panels and camera comparisons are illustrative, not captured screenshots or measured camera benchmarks.
+
+Follow-up regression checks: 19 tests pass, including same-document anchor interception for srcdoc previews, cross-page section targets, reduced-motion scrolling, absence of wired hardware in wireless renderings, symmetric wave geometry, measured full-cable travel and horizontal mirroring. Height caps and reduced section padding are implemented; a browser viewport inspection remains outstanding.
+
+Shared utility update: 22 automated checks pass. Tests cover top-button visibility, returning to the top and operation with motion disabled; each production page includes the button and both icon formats. The three offline shells contain their own embedded tab icons, independent of the inner frame. Wireless rings animate from inner to outer on both devices and both wireless tabs. Windows 11 compatibility is confirmed from the reviewed app source, installer condition and Microsoft MFCreateVirtualCamera requirements (minimum build 22000).
+
+Preview-history update: 26 automated checks pass. The shell harness exercises Home → Downloads → Get Started, Back/Forward restoration of page and scroll position, same-page section history without a reload, direct route fragments, repeated links and reduced-motion navigation. Hidden top-button state now uses opacity/visibility transitions with inert and keyboard exclusion rather than immediate display removal. These are simulated DOM/history checks, not a live browser test.
+
+Neutral-button/size correction: 26 automated checks still pass. CSS inspection found that the desktop Get Started h1 had no explicit font-size while h2 had a large responsive size. After clarification, only the GET STARTED page label receives a new size rule; broader h1/body/card changes were reverted. No detailed-guide selectors or font-family rules changed. The top button uses only neutral colors and opacity/visibility transitions, with transform fixed to none. A live browser visual inspection remains outstanding.
+
+Setup-overview refinement: 26 automated checks pass. The primary CTA and scroll-to-top share a common hover-color token; top-button text color remains light on hover. Responsive setup-only selectors scope the new title/card layout. No connection-instruction markup or font families changed. Live browser visual verification is still outstanding.

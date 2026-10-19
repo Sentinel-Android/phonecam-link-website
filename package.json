@@ -1,0 +1,15 @@
+{
+  "name": "phonecam-link-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A cinematic, dependency-free static landing page for PhoneCam Link.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "build:release": "node scripts/build.mjs --production",
+    "preview": "node scripts/serve.mjs --dist",
+    "check": "node --test scripts/*.test.mjs"
+  }
+}
