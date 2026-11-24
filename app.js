@@ -240,3 +240,28 @@ function createUSBDemo() {
   return {syncMotion};
 }
 usbDemo=createUSBDemo();
+
+// Load Google AdSense once on public content pages.
+(() => {
+  if (location.protocol !== 'https:') return;
+
+  // Keep privacy and error pages free of advertising.
+  if (/(?:^|\/)(?:privacy|404)(?:\.html|\/|$)/i.test(location.pathname)) {
+    return;
+  }
+
+  if (document.querySelector(
+    'script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]'
+  )) {
+    return;
+  }
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.crossOrigin = 'anonymous';
+  script.src =
+    'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' +
+    '?client=ca-pub-6483738937839008';
+
+  document.head.appendChild(script);
+})();
