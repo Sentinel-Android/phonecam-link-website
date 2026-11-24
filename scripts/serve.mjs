@@ -22,7 +22,7 @@ createServer(async (req,res) => {
     }
     const relative = pathname === '/' ? 'index.html' : pathname.slice(1);
     const file = path.resolve(base,relative);
-    if (!file.startsWith(base+path.sep) || (!built && ![...pages,'styles.css','app.js'].includes(relative) && !/^assets\/[\w.-]+\.(webp|jpg|svg|png)$/.test(relative))) { res.writeHead(404).end('Not found'); return; }
+    if (!file.startsWith(base+path.sep) || (!built && ![...pages,'styles.css','app.js','privacy.html'].includes(relative) && !/^assets\/[\w.-]+\.(webp|jpg|svg|png)$/.test(relative))) { res.writeHead(404).end('Not found'); return; }
     const bytes = !built && pages.includes(relative) ? (await render({page:relative})).html : await readFile(file);
     res.writeHead(200,{'Content-Type':mime[path.extname(file)] || 'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
     res.end(req.method === 'HEAD' ? undefined : bytes);

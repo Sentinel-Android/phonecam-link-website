@@ -2574,3 +2574,44 @@
   .site-footer--home .test-device p { font-size:11px; }
  }
 }
+
+/* Privacy notice */
+.privacy-page {
+  width: min(780px, calc(100% - 44px));
+  margin-inline: auto;
+  padding: 64px 0 88px;
+}
+
+.privacy-page h1 {
+  font-size: clamp(44px, 8vw, 80px);
+  margin: 16px 0 24px;
+}
+
+.privacy-page h2 {
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -.03em;
+  margin: 36px 0 12px;
+}
+
+.privacy-page p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #555963;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+.privacy-page .eyebrow,
+.privacy-header .text-link {
+  font-size: 14px;
+}
+
+.privacy-page a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.privacy-header {
+  gap: 16px;
+}
