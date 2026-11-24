@@ -243,7 +243,7 @@ usbDemo=createUSBDemo();
 
 // Load Google AdSense once on public content pages.
 (() => {
-  if (location.protocol !== 'https:') return;
+  if (typeof location === 'undefined' || location.protocol !== 'https:') return;
 
   // Keep privacy and error pages free of advertising.
   if (/(?:^|\/)(?:privacy|404)(?:\.html|\/|$)/i.test(location.pathname)) {
